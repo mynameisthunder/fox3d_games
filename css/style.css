@@ -53,6 +53,13 @@ textarea.input {
   padding-left: 25px;
   cursor: pointer;
 }
+.black_back {
+  background: #121212;
+  padding: 50px 0 35px;
+}
+.white_block {
+  background: #fff;
+}
 * {
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -62,7 +69,7 @@ textarea.input {
 body {
   background: #fff;
   font-family: 'geometriaregular', sans-serif;
-  padding: 92px 10px 0;
+  padding: 92px 0 0;
   font-size: 100%;
 }
 .site-wrapper {
@@ -70,12 +77,14 @@ body {
   max-width: 936px;
   min-width: 300px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 .wide_site_wrapper {
   max-width: 1280px;
   min-width: 300px;
   margin: 0 auto;
   width: 100%;
+  padding: 0 10px;
 }
 h1,
 h2,
@@ -198,17 +207,18 @@ header .mobile_nav ul li a {
 .earth_rush,
 .slider {
   text-align: center;
+  font-size: 0;
 }
 .earth_rush img,
 .slider img {
   width: 100%;
   max-width: 1280px;
+  display: inline-block;
 }
 /* orange_block */
 .orange_block {
   border: 5px solid #da5a00;
   padding: 25px 50px;
-  margin-bottom: 40px;
   font-size: 0;
 }
 .orange_block > * {
@@ -381,9 +391,11 @@ footer .copyrights {
 }
 @media (max-width: 660px) {
   body {
-    padding-left: 20px;
-    padding-right: 20px;
     padding-top: 100px;
+  }
+  .site-wrapper,
+  .wide_site_wrapper {
+    padding: 0 20px;
   }
   h1 {
     letter-spacing: 0 !important;
