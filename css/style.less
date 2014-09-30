@@ -133,6 +133,7 @@ header {
     background: #1a1a1a;
     position: absolute;
     top: 133px;
+    left: 0;
     width: 100%;
     padding: 20px;
     display: none;
@@ -155,6 +156,7 @@ header {
 .slider {
   text-align: center;
   font-size: 0;
+  margin-bottom: -1px;
   img {
     width: 100%;
     max-width: 1280px;
@@ -298,19 +300,49 @@ header {
 
 /* Contacts form */
 .contact {
-  background: url("../images/contact_back.jpg") center top no-repeat;
-  height: 488px;
-  padding-top: 100px;
-  color: #fff;
+  background: url("../images/contact_back.jpg") center bottom no-repeat;
+  min-height: 707px;
+  padding: 50px 0 20px;
+  color: #000;
   h2 {
-    color: #fff;
+    color: #910180;
     font-size: 45.54px;
     text-align: center;
+    span {
+      color: #910180;
+    }
+  }
+  h3 {
+    color: #9dce05;
+    font-family: 'geometriamedium_italic';
+    text-align: center;
+    span {
+      color: #9dce05;
+      font-family: 'geometriaitalic';
+    }
   }
   p.head_p {
     text-align: center;
     font: 24px 'geometriamedium_italic';
     margin-bottom: 40px;
+  }
+  .feedback_form_caption {
+    font: 16px/25px 'geometriabold';
+    .child-valign(top, 16px);
+    text-align: center;
+    margin: 15px 0 0;
+    a {
+      color: #000;
+    }
+    .left {
+      width: 220px;
+      text-align: left;
+    }
+    .right {
+      width: 640px;
+      text-align: left;
+      padding-left: 20px;
+    }
   }
   .feedback_form {
     text-align: center;
@@ -341,6 +373,7 @@ header {
 /* footer */
 footer {
   padding: 50px 0 60px;
+  background: #000;
   .logos {
     margin-bottom: 40px;
     .child-valign(baseline, 14px);
@@ -374,19 +407,17 @@ footer {
       text-align: center !important;
     }
   }
-  .will_help .big {
-    background: none;
+  .feedback_form_caption {
+    &>* {
+      margin-bottom: 15px;
+      text-align: center !important;
+    }
+    .right {
+      width: auto !important;
+    }
   }
 }
 @media (max-width: 830px) {
-  .fact_base {
-    .col {
-      width: 100% !important;
-    }
-    h3 {
-      margin-bottom: 15px;
-    }
-  }
   .logos {
     text-align: center;
     &>* {
@@ -400,15 +431,17 @@ footer {
 }
 
 @media (max-width: 760px) {
-  .orange_block {
-    padding: 25px 20px;
-  }
-  .contact {
-    padding-top: 40px !important;
-  }
+
 }
 
 @media (max-width: 700px) {
+  .feedback_form_caption {
+    text-align: left !important;
+    &>* {
+      text-align: left !important;
+      padding-left: 20px !important;
+    }
+  }
   .feedback_form {
     .form {
       width: 100% !important;
@@ -429,7 +462,7 @@ footer {
 
 @media (max-width: 660px) {
   body {
-    padding-top: 100px;
+    padding-top: 150px;
   }
   .site-wrapper,
   .wide_site_wrapper {
@@ -441,8 +474,8 @@ footer {
   }
   header {
     height: 133px;
-    padding: 0 20px;
     background: #000;
+    padding: 0 !important;
     &.scroll {
       .logo {
         display: block;
@@ -458,60 +491,20 @@ footer {
       display: none;
     }
   }
-  .about {
-    height: 1100px;
-    background-position: 70% bottom;
-    background-size: 190% auto;
-    position: relative;
-    .col {
-      width: 100%;
-    }
-    .sign {
-      position: absolute;
-      bottom: 10px;
-      right: 0;
-      background-position: left center;
-      width: 335px;
-    }
+  .core_team .item {
+    width: 50% !important;
   }
-  .orange_block {
-    &>* {
+  .game_caption {
+    text-align: center;
+    .development {
+      margin-top: 10px;
       width: 100% !important;
-    }
-    .left_block {
-      margin-bottom: 10px;
-    }
-  }
-  .core_team_item {
-    .image {
-      display: none;
-    }
-    .text {
-      width: 100% !important;
-      padding-left: 0 !important;
-      .name {
-        font-size: 16px !important;
-      }
-      .post {
-        font-size: 12px !important;
-      }
-      p {
-        font-size: 15px !important;
+      position: relative;
+      text-align: justify;
+      &.two {
+        text-align: center;
       }
     }
-  }
-  .services_orange_block {
-    display:table;
-    .right_block {display:table-header-group;}
-    .left_block {display:table-footer-group;}
-  }
-  .services {
-    .col {
-      width: 100% !important;
-    }
-  }
-  .contact {
-    padding-top: 20px !important;
   }
   .logos {
     .logo_list {

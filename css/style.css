@@ -33,9 +33,10 @@
   border: none;
   border-bottom: 1px solid #939393;
   background: none;
-  color: #fff;
+  color: #000;
   font: 14px/40px 'geometriabold';
   height: 40px;
+  background: rgba(255, 255, 255, 0.6);
 }
 textarea.input {
   resize: vertical;
@@ -47,7 +48,7 @@ textarea.input {
 .btn {
   -webkit-appearance: none;
   font: 12.8px 'geometriaregular';
-  color: #fff;
+  color: #000;
   background: url("../images/message.png") left center no-repeat;
   border: none;
   padding-left: 25px;
@@ -210,6 +211,7 @@ header .mobile_nav {
   background: #1a1a1a;
   position: absolute;
   top: 133px;
+  left: 0;
   width: 100%;
   padding: 20px;
   display: none;
@@ -228,6 +230,7 @@ header .mobile_nav ul li a {
 .slider {
   text-align: center;
   font-size: 0;
+  margin-bottom: -1px;
 }
 .earth_rush img,
 .slider img {
@@ -393,20 +396,55 @@ header .mobile_nav ul li a {
 }
 /* Contacts form */
 .contact {
-  background: url("../images/contact_back.jpg") center top no-repeat;
-  height: 488px;
-  padding-top: 100px;
-  color: #fff;
+  background: url("../images/contact_back.jpg") center bottom no-repeat;
+  min-height: 707px;
+  padding: 50px 0 20px;
+  color: #000;
 }
 .contact h2 {
-  color: #fff;
+  color: #910180;
   font-size: 45.54px;
   text-align: center;
+}
+.contact h2 span {
+  color: #910180;
+}
+.contact h3 {
+  color: #9dce05;
+  font-family: 'geometriamedium_italic';
+  text-align: center;
+}
+.contact h3 span {
+  color: #9dce05;
+  font-family: 'geometriaitalic';
 }
 .contact p.head_p {
   text-align: center;
   font: 24px 'geometriamedium_italic';
   margin-bottom: 40px;
+}
+.contact .feedback_form_caption {
+  font: 16px/25px 'geometriabold';
+  font-size: 0;
+  text-align: center;
+  margin: 15px 0 0;
+}
+.contact .feedback_form_caption > * {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+}
+.contact .feedback_form_caption a {
+  color: #000;
+}
+.contact .feedback_form_caption .left {
+  width: 220px;
+  text-align: left;
+}
+.contact .feedback_form_caption .right {
+  width: 640px;
+  text-align: left;
+  padding-left: 20px;
 }
 .contact .feedback_form {
   text-align: center;
@@ -440,6 +478,7 @@ header .mobile_nav ul li a {
 /* footer */
 footer {
   padding: 50px 0 60px;
+  background: #000;
 }
 footer .logos {
   margin-bottom: 40px;
@@ -479,17 +518,15 @@ footer .copyrights {
   .contact .address {
     text-align: center !important;
   }
-  .will_help .big {
-    background: none;
+  .feedback_form_caption > * {
+    margin-bottom: 15px;
+    text-align: center !important;
+  }
+  .feedback_form_caption .right {
+    width: auto !important;
   }
 }
 @media (max-width: 830px) {
-  .fact_base .col {
-    width: 100% !important;
-  }
-  .fact_base h3 {
-    margin-bottom: 15px;
-  }
   .logos {
     text-align: center;
   }
@@ -501,15 +538,14 @@ footer .copyrights {
     margin-bottom: 10px;
   }
 }
-@media (max-width: 760px) {
-  .orange_block {
-    padding: 25px 20px;
-  }
-  .contact {
-    padding-top: 40px !important;
-  }
-}
 @media (max-width: 700px) {
+  .feedback_form_caption {
+    text-align: left !important;
+  }
+  .feedback_form_caption > * {
+    text-align: left !important;
+    padding-left: 20px !important;
+  }
   .feedback_form .form {
     width: 100% !important;
     padding: 0 20px;
@@ -527,7 +563,7 @@ footer .copyrights {
 }
 @media (max-width: 660px) {
   body {
-    padding-top: 100px;
+    padding-top: 150px;
   }
   .site-wrapper,
   .wide_site_wrapper {
@@ -539,8 +575,8 @@ footer .copyrights {
   }
   header {
     height: 133px;
-    padding: 0 20px;
     background: #000;
+    padding: 0 !important;
   }
   header.scroll .logo {
     display: block;
@@ -554,58 +590,20 @@ footer .copyrights {
   header .main_nav {
     display: none;
   }
-  .about {
-    height: 1100px;
-    background-position: 70% bottom;
-    background-size: 190% auto;
+  .core_team .item {
+    width: 50% !important;
+  }
+  .game_caption {
+    text-align: center;
+  }
+  .game_caption .development {
+    margin-top: 10px;
+    width: 100% !important;
     position: relative;
+    text-align: justify;
   }
-  .about .col {
-    width: 100%;
-  }
-  .about .sign {
-    position: absolute;
-    bottom: 10px;
-    right: 0;
-    background-position: left center;
-    width: 335px;
-  }
-  .orange_block > * {
-    width: 100% !important;
-  }
-  .orange_block .left_block {
-    margin-bottom: 10px;
-  }
-  .core_team_item .image {
-    display: none;
-  }
-  .core_team_item .text {
-    width: 100% !important;
-    padding-left: 0 !important;
-  }
-  .core_team_item .text .name {
-    font-size: 16px !important;
-  }
-  .core_team_item .text .post {
-    font-size: 12px !important;
-  }
-  .core_team_item .text p {
-    font-size: 15px !important;
-  }
-  .services_orange_block {
-    display: table;
-  }
-  .services_orange_block .right_block {
-    display: table-header-group;
-  }
-  .services_orange_block .left_block {
-    display: table-footer-group;
-  }
-  .services .col {
-    width: 100% !important;
-  }
-  .contact {
-    padding-top: 20px !important;
+  .game_caption .development.two {
+    text-align: center;
   }
   .logos .logo_list .logo {
     width: 100%;
