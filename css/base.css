@@ -47,3 +47,23 @@ textarea.input {
 .white_block {
   background: #fff;
 }
+.orange_grad_back {
+  background: #ffaf00;
+  background: -moz-linear-gradient(left, #ffaf00 0%, #ffd23d 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ffaf00), color-stop(100%, #ffd23d));
+  background: -webkit-linear-gradient(left, #ffaf00 0%, #ffd23d 100%);
+  background: -o-linear-gradient(left, #ffaf00 0%, #ffd23d 100%);
+  background: -ms-linear-gradient(left, #ffaf00 0%, #ffd23d 100%);
+  background: linear-gradient(to right, #ffaf00 0%, #ffd23d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffaf00', endColorstr='#ffd23d', GradientType=1);
+}
+.green_grad_back {
+  background: #cddf00;
+  background: -moz-linear-gradient(left, #cddf00 0%, #e3ed2b 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #cddf00), color-stop(100%, #e3ed2b));
+  background: -webkit-linear-gradient(left, #cddf00 0%, #e3ed2b 100%);
+  background: -o-linear-gradient(left, #cddf00 0%, #e3ed2b 100%);
+  background: -ms-linear-gradient(left, #cddf00 0%, #e3ed2b 100%);
+  background: linear-gradient(to right, #cddf00 0%, #e3ed2b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cddf00', endColorstr='#e3ed2b', GradientType=1);
+}

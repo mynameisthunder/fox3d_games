@@ -160,45 +160,63 @@ header {
     max-width: 1280px;
     display: inline-block;
   }
+}
+.slider {
+  img {
+    max-width: 100%;
+  }
+}
 
+.game_caption {
+  padding: 20px 0;
+  font: 21.27px 'geometriabold';
+  color: #0c0c0c;
+  .site-wrapper {
+    position: relative;
+  }
+  a {
+    font-family: 'geometriamedium';
+    color: #0c0c0c;
+  }
+  .development {
+    text-align: justify;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    height: 100%;
+    .child-valign(middle, 14px);
+    width: 45%;
+
+    line-height: 0;
+    font-size: 1px; /* 1px для Opera */
+    &:after {
+      width: 100%;
+      height: 0px;
+      visibility: hidden;
+      overflow: hidden;
+      content: '';
+      display: inline-block;
+    }
+    span {
+      font: 40px 'geometriabold_italic';
+      color: #0c0c0c;
+      text-transform: uppercase;
+    }
+  }
 }
 
 /* orange_block */
 .orange_block {
-  border: 5px solid #da5a00;
-  padding: 25px 50px;
-  .child-valign(middle, 14px);
-  .left_block {
-    padding-right: 10px;
-  }
-  &.core_team_orange_block {
-    .left_block {
-      width: 40%;
-    }
-    .right_block {
-      width: 60%;
-    }
-  }
-  &.services_orange_block {
-    .left_block {
-      width: 55%;
-    }
-    .right_block {
-      width: 45%;
-    }
-  }
-  &.fact_base_orange_block {
-    color: #ff6900;
-    .center_block {
-      font: 25px 'geometriamedium_italic';
-    }
+  border: 5px solid #ffd23d;
+  padding: 30px 25px;
+  p {
+    font: 26px/30px 'geometriamedium';
+    color: #fff;
+    padding-bottom: 30px;
     span {
+      text-transform: uppercase;
       font-family: 'geometriabold';
     }
-  }
-  p {
-    font: 16px/20px 'geometriaregular';
-    color: #fff;
   }
 }
 /* orange_block */
