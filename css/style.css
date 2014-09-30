@@ -295,6 +295,102 @@ header .mobile_nav ul li a {
   font-family: 'geometriabold';
 }
 /* orange_block */
+.core_team {
+  text-align: center;
+}
+.core_team h2 {
+  font: 34px 'geometriabold';
+  color: #fff;
+  margin-bottom: 15px;
+}
+.core_team h2 span {
+  font-family: 'geometriamedium';
+  color: #fff;
+}
+.core_team .core_team_items {
+  font-size: 0;
+}
+.core_team .core_team_items > * {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+}
+.core_team .core_team_items .item {
+  width: 25%;
+  padding: 20px 10px;
+  color: #fff;
+}
+.core_team .core_team_items .item:hover .image .item_about {
+  top: 0;
+}
+.core_team .core_team_items .item:hover .name {
+  color: #ffae00;
+}
+.core_team .core_team_items .item .image {
+  overflow: hidden;
+  height: 240px;
+  position: relative;
+}
+.core_team .core_team_items .item .image > img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+.core_team .core_team_items .item .image .item_about {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  font: 13px/18px 'geometriaregular';
+}
+.core_team .core_team_items .item .image .item_about .links {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+.core_team .core_team_items .item .image .item_about .links a {
+  margin: 0 2px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 34px;
+  height: 34px;
+  text-align: center;
+  font-size: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+.core_team .core_team_items .item .image .item_about .links a > * {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+}
+.core_team .core_team_items .item .image .item_about .links a:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  height: 100%;
+}
+.core_team .core_team_items .item .name {
+  font: 16px 'geometriamedium';
+  padding: 8px 0 5px;
+}
+.core_team .core_team_items .item .post {
+  font: 12px 'geometriaregular';
+  -moz-opacity: 0.56;
+  -khtml-opacity: 0.56;
+  -webkit-opacity: 0.56;
+  opacity: 0.56;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=56.00000000000001);
+  filter: alpha(opacity=56.00000000000001);
+}
 /* Contacts form */
 .contact {
   background: url("../images/contact_back.jpg") center top no-repeat;

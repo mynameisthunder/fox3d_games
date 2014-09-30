@@ -15,6 +15,20 @@
     font-size: @font-size;
   }
 }
+.child-valign_wbefore(@par, @font-size) {
+  font-size: 0;
+  &>* {
+    display: inline-block;
+    vertical-align: @par;
+    font-size: @font-size;
+  }
+  &:before {
+    display: inline-block;
+    vertical-align: @par;
+    content: "";
+    height: 100%;
+  }
+}
 
 .valign(@par, @font-size) {
   display: inline-block;
